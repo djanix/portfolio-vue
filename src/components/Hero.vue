@@ -38,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(64, 107, 0, 0.75);
+    background-color: rgba($primary-color, 0.75);
   }
 
   .text {
@@ -57,5 +57,10 @@
     color: #d5e9ba;
     font-size: 2.25em;
     margin: 0;
+    text-transform: none;
+
+    &:after {
+      display: none;
+    }
   }
 </style>
