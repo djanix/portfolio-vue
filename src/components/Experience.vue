@@ -2,28 +2,11 @@
   <section class="container experience">
     <h2>Experience</h2>
 
-    <v-card v-for="item in experience">
-      <v-container fluid grid-list-lg>
-        <v-layout row>
-          <v-flex xs2>
-            {{ formatDate(item.startDate) }} - {{ formatDate(item.endDate) }}
-          </v-flex>
-
-          <v-flex xs1>
-            <v-card-media
-              v-bind:src="item.image"
-              height="125px"
-              contain
-            ></v-card-media>
-          </v-flex>
-
-          <v-flex xs5>
-            {{ item.name }}<br>
-            {{ item.position }}
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-card>
+    <experience-item
+      v-for="item in experience"
+      :key="item.name"
+      :item="item"
+    ></experience-item>
   </section>
 </template>
 
@@ -32,14 +15,20 @@
   import { format } from 'date-fns';
   import { isEmpty } from 'lodash';
 
+  import ExperienceItem from '@/components/Experience-item.vue';
+
   export default Vue.extend({
     name: 'Experience',
+
+    components: {
+      ExperienceItem,
+    },
 
     data: () => ({
       experience: [
         {
           name: 'SweetIQ',
-          image: '',
+          image: 'logo_sweetiq.jpg',
           startDate: '01-08-2015',
           endDate: null,
           position: 'Fullstack Software Developer',
@@ -48,7 +37,7 @@
         },
         {
           name: 'U92',
-          image: '',
+          image: 'logo_u92.jpg',
           startDate: '01-02-2015',
           endDate: '01-08-2015',
           position: 'Frontend Web Developer',
@@ -57,7 +46,7 @@
         },
         {
           name: 'Sid Lee',
-          image: '',
+          image: 'logo_sidlee.jpg',
           startDate: '01-11-2011',
           endDate: '01-02-2015',
           position: 'Frontend Web Developer',
@@ -66,7 +55,7 @@
         },
         {
           name: 'GolemLabs Studio',
-          image: '',
+          image: 'logo_golemlabs.jpg',
           startDate: '01-02-2011',
           endDate: '01-11-2011',
           position: 'Fullstack Web Developer',
@@ -75,7 +64,7 @@
         },
         {
           name: 'Radium Multimedia',
-          image: '',
+          image: 'logo_radium.jpg',
           startDate: '01-01-2009',
           endDate: '01-02-2011',
           position: 'Fullstack Web Developer',

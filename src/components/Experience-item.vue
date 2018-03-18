@@ -1,0 +1,53 @@
+<template>
+  <v-container fluid grid-list-lg>
+    <v-layout row wrap align-center>
+      <v-flex xs12 md3 class="text-xs-center text-md-right">
+        {{ formatDate(item.startDate) }} - {{ formatDate(item.endDate) }}
+      </v-flex>
+
+      <v-flex xs12 md1>
+        <img :src="require(`@/assets/${item.image}`)" alt="">
+      </v-flex>
+
+      <v-flex>
+        <v-card class="pa-4 text-xs-left">
+          <h3>{{ item.name }}</h3>
+          <div class="position">{{ item.position }}</div>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</template>
+
+<script lang="ts">
+  import Vue from 'vue';
+  import { format } from 'date-fns';
+  import { isEmpty } from 'lodash';
+
+  export default Vue.extend({
+    name: 'ExperienceItem',
+
+    props: [
+      'item',
+    ],
+
+    methods: {
+      formatDate(date: string): string {
+        return isEmpty(date) ? 'Present' : format(new Date(date), 'MMM YYYY');
+      },
+    },
+  });
+</script>
+
+<style scoped lang="scss">
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid $primary-color;
+  }
+
+  .position {
+    color: $primary-color;
+  }
+</style>

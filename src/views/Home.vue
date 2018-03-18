@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Hero/>
+    <hero/>
 
     <div class="wrapper">
       <div class="stripes">
@@ -11,11 +11,13 @@
         <span></span>
       </div>
 
-      <About/>
-      <Experience/>
-      <Skills/>
-      <Education/>
-      <Contact/>
+      <div class="main">
+        <about/>
+        <experience/>
+        <skills/>
+        <education/>
+        <contact/>
+      </div>
     </div>
   </div>
 </template>
@@ -86,5 +88,10 @@
   .wrapper {
     position: relative;
     z-index: 2;
+  }
+
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 </style>

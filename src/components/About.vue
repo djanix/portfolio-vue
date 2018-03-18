@@ -35,13 +35,23 @@
   }
 
   .picture {
-    margin: 30px 0;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 5px solid $primary-color;
+    margin: 30px auto;
+    overflow: hidden;
   }
 
   img {
-    border-radius: 50%;
-    border: 5px solid $primary-color;
     width: 250px;
     height: 250px;
+    filter: sepia(0);
+    transition: all cubic-bezier(.62,.28,.23,.99) 0.35s;
+
+    &:hover {
+      filter: sepia(20%);
+      transform: scale(1.05);
+    }
   }
 </style>
