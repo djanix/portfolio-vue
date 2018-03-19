@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <section class="education">
     <h2>Education</h2>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

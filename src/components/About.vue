@@ -1,5 +1,5 @@
 <template>
-  <section class="container about">
+  <section class="about">
     <h2>About Me</h2>
 
     <div class="picture">
@@ -29,11 +29,6 @@
     position: relative;
   }
 
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
   .picture {
     width: 260px;
     height: 260px;
@@ -47,7 +42,7 @@
     width: 250px;
     height: 250px;
     filter: sepia(0);
-    transition: all cubic-bezier(.62,.28,.23,.99) 0.35s;
+    transition: $transition;
 
     &:hover {
       filter: sepia(20%);

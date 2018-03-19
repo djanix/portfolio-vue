@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <section class="contact">
     <h2>Contact</h2>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

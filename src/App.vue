@@ -38,4 +38,9 @@
       background: $primary-color linear-gradient(to right, #BFE1CB, transparent, #BFE1CB) left repeat;
     }
   }
+
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 </style>

@@ -11,11 +11,23 @@
         <span></span>
       </div>
 
-      <div class="main">
+      <div class="pb-5">
         <about/>
+      </div>
+
+      <div class="pb-5 grey lighten-3">
         <experience/>
+      </div>
+
+      <div class="pb-5">
         <skills/>
+      </div>
+
+      <div class="pb-5 grey lighten-3">
         <education/>
+      </div>
+
+      <div class="pb-5">
         <contact/>
       </div>
     </div>
@@ -88,10 +100,5 @@
   .wrapper {
     position: relative;
     z-index: 2;
-  }
-
-  .main {
-    max-width: 1200px;
-    margin: 0 auto;
   }
 </style>

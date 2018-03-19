@@ -1,12 +1,12 @@
 <template>
-  <section class="hero">
+  <div class="hero">
     <div class="overlay"></div>
 
     <div class="text">
       <h1>Janic Beauchemin</h1>
       <h2>Web Developer</h2>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">

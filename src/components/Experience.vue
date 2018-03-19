@@ -1,12 +1,14 @@
 <template>
-  <section class="container experience">
-    <h2>Experience</h2>
+  <section class="experience">
+    <h2 class="mb-5">Experience</h2>
 
-    <experience-item
-      v-for="item in experience"
-      :key="item.name"
-      :item="item"
-    ></experience-item>
+    <div class="experience-list">
+      <experience-item
+        v-for="item in experience"
+        :key="item.name"
+        :item="item"
+      ></experience-item>
+    </div>
   </section>
 </template>
 
@@ -29,7 +31,7 @@
         {
           name: 'SweetIQ',
           image: 'logo_sweetiq.jpg',
-          startDate: '01-08-2015',
+          startDate: '2015-08-01',
           endDate: null,
           position: 'Fullstack Software Developer',
           status: 'senior / team lead',
@@ -38,8 +40,8 @@
         {
           name: 'U92',
           image: 'logo_u92.jpg',
-          startDate: '01-02-2015',
-          endDate: '01-08-2015',
+          startDate: '2015-02-01',
+          endDate: '2015-08-01',
           position: 'Frontend Web Developer',
           status: 'senior',
           description: '',
@@ -47,8 +49,8 @@
         {
           name: 'Sid Lee',
           image: 'logo_sidlee.jpg',
-          startDate: '01-11-2011',
-          endDate: '01-02-2015',
+          startDate: '2011-11-01',
+          endDate: '2015-02-01',
           position: 'Frontend Web Developer',
           status: 'senior',
           description: '',
@@ -56,8 +58,8 @@
         {
           name: 'GolemLabs Studio',
           image: 'logo_golemlabs.jpg',
-          startDate: '01-02-2011',
-          endDate: '01-11-2011',
+          startDate: '2011-02-01',
+          endDate: '2011-11-01',
           position: 'Fullstack Web Developer',
           status: 'junior',
           description: '',
@@ -65,8 +67,8 @@
         {
           name: 'Radium Multimedia',
           image: 'logo_radium.jpg',
-          startDate: '01-01-2009',
-          endDate: '01-02-2011',
+          startDate: '2009-01-01',
+          endDate: '2011-02-01',
           position: 'Fullstack Web Developer',
           status: 'junior',
           description: '',
@@ -83,5 +85,21 @@
 </script>
 
 <style scoped lang="scss">
+  .experience-list {
+    position: relative;
+  }
 
+  @media only screen and (min-width: 960px) {
+    .experience-list:before {
+      display: block;
+      content: "";
+      width: 3px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 40px;
+      bottom: 50px;
+      left: 29.4%;
+      z-index: 0;
+    }
+  }
 </style>
