@@ -30,7 +30,7 @@
         },
         {
           name: 'react',
-          icon: 'devicon-react-plain',
+          icon: 'devicon-react-original',
           category: 'framework',
         },
         {
@@ -80,7 +80,7 @@
         },
         {
           name: 'sass',
-          icon: 'devicon-sass-plain',
+          icon: 'devicon-sass-original',
           category: 'tool',
         },
         {

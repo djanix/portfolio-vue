@@ -98,6 +98,7 @@
   }
 
   .wrapper {
+    overflow: hidden;
     position: relative;
     z-index: 2;
   }

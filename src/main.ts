@@ -7,6 +7,7 @@ import store from './store';
 import './registerServiceWorker';
 
 import 'vuetify/dist/vuetify.min.css';
+import './assets/font.css';
 
 Vue.config.productionTip = false;
 
