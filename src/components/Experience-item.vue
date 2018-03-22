@@ -14,6 +14,17 @@
         <v-card class="pa-4 text-xs-left">
           <h3>{{ item.name }}</h3>
           <div class="position">{{ item.position }}</div>
+
+          <div class="skills">
+            <v-chip
+              outline
+              color="grey"
+              v-for="skill in item.skills"
+              class="mt-4"
+            >
+              {{ skill }}
+            </v-chip>
+          </div>
         </v-card>
       </v-flex>
     </v-layout>

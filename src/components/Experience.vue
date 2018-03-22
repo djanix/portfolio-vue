@@ -35,7 +35,17 @@
           endDate: null,
           position: 'Fullstack Software Developer',
           status: 'senior / team lead',
-          description: '',
+          skills: [
+            'polymer',
+            'vue',
+            'nodeJs',
+            'typescript',
+            'express',
+            'mongo',
+            'postreSQL',
+            'docker',
+            'gulp',
+          ],
         },
         {
           name: 'U92',
@@ -44,7 +54,12 @@
           endDate: '2015-08-01',
           position: 'Frontend Web Developer',
           status: 'senior',
-          description: '',
+          skills: [
+            'react',
+            'flux',
+            'gulp',
+            '.NET',
+          ],
         },
         {
           name: 'Sid Lee',
@@ -53,7 +68,18 @@
           endDate: '2015-02-01',
           position: 'Frontend Web Developer',
           status: 'senior',
-          description: '',
+          skills: [
+            'angular',
+            'vue',
+            'meteor',
+            'backbone',
+            'jQuery',
+            'nodeJs',
+            'photoshop',
+            'php',
+            '.NET',
+            'grunt',
+          ],
         },
         {
           name: 'GolemLabs Studio',
@@ -62,7 +88,14 @@
           endDate: '2011-11-01',
           position: 'Fullstack Web Developer',
           status: 'junior',
-          description: '',
+          skills: [
+            'javascript',
+            'jQuery',
+            'html',
+            'css',
+            'photoshop',
+            'php',
+          ],
         },
         {
           name: 'Radium Multimedia',
@@ -71,7 +104,14 @@
           endDate: '2011-02-01',
           position: 'Fullstack Web Developer',
           status: 'junior',
-          description: '',
+          skills: [
+            'javascript',
+            'jQuery',
+            'html',
+            'css',
+            'photoshop',
+            'coldfusion',
+          ],
         },
       ],
     }),
@@ -96,8 +136,8 @@
       width: 3px;
       background-color: $primary-color;
       position: absolute;
-      top: 40px;
-      bottom: 50px;
+      top: 80px;
+      bottom: 80px;
       left: 29.4%;
       z-index: 0;
     }
