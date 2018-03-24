@@ -5,9 +5,14 @@ import router from './router';
 import store from './store';
 import './registerServiceWorker';
 import 'vuetify/dist/vuetify.min.css';
+import colors from 'vuetify/es5/util/colors';
 import './assets/font.css';
 Vue.config.productionTip = false;
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+    theme: {
+        primary: colors.green.darken3,
+    },
+});
 new Vue({
     router,
     store,

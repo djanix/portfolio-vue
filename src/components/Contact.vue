@@ -1,10 +1,11 @@
 <template>
   <section class="contact">
-    <h2>Contact</h2>
+    <h2 class="mb-4">Contact</h2>
 
-    <div id="icon-container" class="text-xs-center mt-5">
+    <div id="icon-container" class="text-xs-center mt-4">
       <v-btn
         v-for="item in contacts"
+        :key="item.name"
         fab
         large
         color="grey lighten-3"

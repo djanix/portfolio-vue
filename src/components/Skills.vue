@@ -1,6 +1,6 @@
 <template>
   <section class="skills">
-    <h2>Skills</h2>
+    <h2 class="mb-4">Skills</h2>
 
     <p class="mt-4 mb-5">Languages, tools, libraries and frameworks that I have experience and am comfortable with.</p>
 

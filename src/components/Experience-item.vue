@@ -11,20 +11,26 @@
       </v-flex>
 
       <v-flex>
-        <v-card class="pa-4 text-xs-left">
-          <h3>{{ item.name }}</h3>
-          <div class="position">{{ item.position }}</div>
+        <v-card class="text-xs-left">
+          <v-card-title primary-title>
+            <div>
+              <h3 class="headline mb-0">{{ item.name }}</h3>
+              <h4 class="title primary--text">{{ item.position }}</h4>
 
-          <div class="skills">
-            <v-chip
-              outline
-              color="grey"
-              v-for="skill in item.skills"
-              class="mt-4"
-            >
-              {{ skill }}
-            </v-chip>
-          </div>
+              <div>
+                <v-chip
+                  disabled
+                  outline
+                  color="grey"
+                  v-for="skill in item.skills"
+                  :key="skill"
+                  class="mt-4"
+                >
+                  {{ skill }}
+                </v-chip>
+              </div>
+            </div>
+          </v-card-title>
         </v-card>
       </v-flex>
     </v-layout>
@@ -61,10 +67,6 @@
     height: 60px;
     border-radius: 50%;
     border: 3px solid $primary-color;
-  }
-
-  .position {
-    color: $primary-color;
   }
 
   .experience-item {

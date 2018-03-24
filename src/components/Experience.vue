@@ -1,6 +1,6 @@
 <template>
   <section class="experience">
-    <h2 class="mb-5">Experience</h2>
+    <h2 class="mb-4">Experience</h2>
 
     <div class="experience-list">
       <experience-item
@@ -36,11 +36,11 @@
           position: 'Fullstack Software Developer',
           status: 'senior / team lead',
           skills: [
+            'nodeJs',
+            'express',
+            'typescript',
             'polymer',
             'vue',
-            'nodeJs',
-            'typescript',
-            'express',
             'mongo',
             'postreSQL',
             'docker',
