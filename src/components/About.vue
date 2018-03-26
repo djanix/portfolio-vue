@@ -28,6 +28,10 @@
 </script>
 
 <style scoped lang="scss">
+  h2:after {
+    display: none;
+  }
+
   .about {
     position: relative;
     margin: 0 auto;

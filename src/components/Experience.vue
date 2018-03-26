@@ -134,11 +134,11 @@
       display: block;
       content: "";
       width: 3px;
-      background-color: $primary-color;
+      background: $primary-color linear-gradient(to bottom, transparent 90%, #BFE1CB) top repeat;
       position: absolute;
       top: 80px;
-      bottom: 80px;
-      left: 29.4%;
+      bottom: 20px;
+      left: 28.6%;
       z-index: 0;
     }
   }

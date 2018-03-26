@@ -11,7 +11,7 @@
         color="grey lighten-3"
         target="_blank"
         :href="item.link"
-        class="ml-4 mr-4"
+        class="ml-3 mr-3"
       >
         <v-icon>{{ item.icon }}</v-icon>
       </v-btn>

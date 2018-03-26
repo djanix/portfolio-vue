@@ -48,20 +48,33 @@
   }
 
   h1 {
-    font-size: 5em;
+    font-size: 8vw;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+      font-size: 5.7rem;
+    }
   }
 
   h2 {
     color: #d5e9ba;
-    font-size: 2.25em;
+    font-size: 4vw;
+
     margin: 0;
     text-transform: none;
 
     &:after {
       display: none;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 3.2rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.7rem;
     }
   }
 </style>

@@ -1,14 +1,34 @@
 <template>
   <v-app id="app">
     <router-view/>
+
+    <v-footer height="auto" class="grey darken-4">
+      <v-layout row wrap justify-center>
+        <v-flex xs12 py-3 text-xs-center white--text class="caption">
+          &copy;{{ currentYear }} - <strong>Janic Beauchemin</strong> - <a href="mailto:jbeauchemin33@gmail.com">jbeauchemin33@gmail.com</a>
+        </v-flex>
+      </v-layout>
+    </v-footer>
   </v-app>
 </template>
+
+<script lang="ts">
+  import Vue from 'vue';
+
+
+  export default Vue.extend({
+    name: 'app',
+
+    data: () => ({
+      currentYear: new Date().getFullYear(),
+    }),
+  });
+</script>
 
 <style lang="scss">
   body {
     margin: 0;
     font-size: 20px;
-    color: #74808a;
   }
 
   * {
@@ -23,10 +43,9 @@
   }
 
   h2 {
-    color: #2c3e50;
     font-size: 3rem;
     font-weight: normal;
-    margin-top: 1.3em;
+    margin-top: 4rem;
     display: inline-block;
 
     &:after {
@@ -42,5 +61,10 @@
   section {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
   }
 </style>

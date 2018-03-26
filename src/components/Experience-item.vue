@@ -1,21 +1,21 @@
 <template>
   <v-container fluid grid-list-lg class="experience-item">
-    <v-layout row wrap align-center>
-      <v-flex xs12 md3 class="text-xs-center text-md-right">
+    <v-layout row wrap align-top>
+      <v-flex xs8 md3 order-xs2 order-md1 class="text-xs-left text-md-right mt-4">
         {{ formatDate(item.startDate) }} - {{ formatDate(item.endDate) }}
          <div class="subheading grey--text">{{ calculateDuration(item.startDate, item.endDate) }}</div>
       </v-flex>
 
-      <v-flex xs12 md1>
+      <v-flex order-xs1 order-md2 class="mt-4 logo">
         <img :src="require(`@/assets/${item.image}`)" alt="">
       </v-flex>
 
-      <v-flex>
+      <v-flex order-xs3 class="description">
         <v-card class="text-xs-left">
           <v-card-title primary-title>
             <div>
               <h3 class="headline mb-0">{{ item.name }}</h3>
-              <h4 class="title primary--text">{{ item.position }}</h4>
+              <h4 class="title primary--text mb-4">{{ item.position }}</h4>
 
               <div>
                 <v-chip
@@ -24,7 +24,6 @@
                   color="grey"
                   v-for="skill in item.skills"
                   :key="skill"
-                  class="mt-4"
                 >
                   {{ skill }}
                 </v-chip>
@@ -62,6 +61,11 @@
 </script>
 
 <style scoped lang="scss">
+  .logo {
+    width: 80px;
+    flex: none;
+  }
+
   img {
     width: 60px;
     height: 60px;
@@ -72,5 +76,10 @@
   .experience-item {
     position: relative;
     z-index: 1;
+  }
+
+  .description {
+    flex: 1;
+    min-width: 300px;
   }
 </style>

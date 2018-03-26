@@ -6,7 +6,7 @@
 
     <v-container fluid grid-list-sm>
       <v-layout row wrap align-center>
-        <v-flex xs6 sm3 md2 v-for="item in skills" :key="item.name" class="list-item">
+        <v-flex xs4 sm3 md2 v-for="item in skills" :key="item.name" class="list-item">
           <i :class="item.icon"></i>
           <p>{{ item.name }}</p>
         </v-flex>
@@ -103,26 +103,26 @@
           icon: 'devicon-intellij-plain',
           category: 'library',
         },
-        {
-          name: 'polymer',
-          icon: '',
-          category: 'framework',
-        },
-        {
-          name: 'redux',
-          icon: '',
-          category: 'library',
-        },
-        {
-          name: 'lodash',
-          icon: '',
-          category: 'library',
-        },
-        {
-          name: 'koa',
-          icon: '',
-          category: 'framework',
-        },
+        // {
+        //   name: 'polymer',
+        //   icon: '',
+        //   category: 'framework',
+        // },
+        // {
+        //   name: 'redux',
+        //   icon: '',
+        //   category: 'library',
+        // },
+        // {
+        //   name: 'lodash',
+        //   icon: '',
+        //   category: 'library',
+        // },
+        // {
+        //   name: 'koa',
+        //   icon: '',
+        //   category: 'framework',
+        // },
       ],
     }),
   });
@@ -137,7 +137,11 @@
     }
 
     i {
-      font-size: 100px;
+      font-size: 5rem;
+
+      @media (min-width: 768px) {
+        font-size: 7.1rem;
+      }
     }
   }
 </style>

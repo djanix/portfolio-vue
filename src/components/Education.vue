@@ -2,10 +2,10 @@
   <section class="education">
     <h2 class="mb-4">Education</h2>
 
-    <v-card class="mt-4 mb-4 text-xs-left" v-for="item in education" :key="item.name">
+    <v-card class="ma-3 text-xs-left" v-for="item in education" :key="item.name">
       <v-card-title primary-title>
         <v-container class="pa-0">
-          <v-layout row>
+          <v-layout row wrap>
             <v-flex xs12 sm9>
               <h3 class="headline mb-0">{{ item.name }}</h3>
               <h4 class="title primary--text">{{ item.program }}</h4>
