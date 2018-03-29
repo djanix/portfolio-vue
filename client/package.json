@@ -1,7 +1,9 @@
 {
   "name": "portfolio-vue",
   "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "author": "Janic Beauchemin",
+  "license": "ISC",
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",

@@ -1,0 +1,15 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "prefer-const": true,
+    "arrow-parens": false,
+    "quotemark": [true, "single"],
+    "trailing-comma": [true, {"multiline": "never", "singleline": "never"}]
+  }
+}

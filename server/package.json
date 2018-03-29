@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-vue",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "tsc && nodemon app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Janic Beauchemin",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "node": "^8.10.0",
+    "nodemon": "^1.17.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.1"
+  }
+}
