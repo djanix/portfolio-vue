@@ -76,6 +76,10 @@
   .experience-item {
     position: relative;
     z-index: 1;
+
+    @media print {
+      page-break-inside: avoid;
+    }
   }
 
   .description {

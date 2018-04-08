@@ -28,6 +28,10 @@
 
     background: fixed url('../assets/moher_cliffs.jpg') top center / cover no-repeat;
     color: #effcd9;
+
+    @media screen and (orientation:portrait) {
+      background-image: url('../assets/moher_cliffs_mobile.jpg');
+    }
   }
 
   .overlay {

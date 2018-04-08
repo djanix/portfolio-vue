@@ -6,9 +6,12 @@ import router from './router';
 import store from './store';
 import './registerServiceWorker';
 
+import './assets/normalize.css';
+import './assets/main.css';
+import './assets/font.css';
+
 import 'vuetify/dist/vuetify.min.css';
 import colors from 'vuetify/es5/util/colors';
-import './assets/font.css';
 
 Vue.config.productionTip = false;
 

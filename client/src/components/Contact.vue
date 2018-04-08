@@ -48,5 +48,12 @@
 </script>
 
 <style scoped lang="scss">
-
+  @media print {
+    a {
+      background-color: #fff !important;
+      display: block !important;
+      margin: 0 0 40px 0 !important;
+      width: 100% !important;
+    }
+  }
 </style>

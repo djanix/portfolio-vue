@@ -136,11 +136,19 @@
       color: $primary-color;
     }
 
+    @media print {
+      max-width: 20% !important;
+    }
+
     i {
       font-size: 5rem;
 
       @media (min-width: 768px) {
         font-size: 7.1rem;
+      }
+
+      @media print {
+        font-size: 4rem;
       }
     }
   }

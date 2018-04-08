@@ -27,7 +27,6 @@
 
 <style lang="scss">
   body {
-    margin: 0;
     font-size: 20px;
   }
 
@@ -66,5 +65,15 @@
   .footer a {
     color: white;
     text-decoration: none;
+  }
+
+  @media print {
+    section {
+      page-break-after: always;
+    }
+
+    .footer {
+      display: none;
+    }
   }
 </style>
