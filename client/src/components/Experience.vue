@@ -138,7 +138,7 @@
       position: absolute;
       top: 80px;
       bottom: 20px;
-      left: 28.6%;
+      left: calc(25% + 42px);
       z-index: 0;
     }
   }

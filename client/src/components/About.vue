@@ -6,11 +6,11 @@
       <img src="../assets/me-400x400.jpg" alt="">
     </div>
 
-    <h3 class="mb-4">Welcome to my Portfolio!</h3>
+    <h3 class="mb-4 px-3">Welcome to my Portfolio!</h3>
 
-    <p>I'm Janic Beauchemin, a fullstack software developer based in Montreal, Canada.</p>
+    <p class="px-3">I'm Janic Beauchemin, a fullstack software developer based in Montreal, Canada.</p>
 
-    <p>
+    <p class="px-3">
       What I love about web development is that everything is in constant evolution, there's always something new to
       try and different ways to become a better developer. I am a big fan of functional programming and everything
       javascript related. I'm currently working as a team lead at SweetIQ and I use creativity blended with technology
