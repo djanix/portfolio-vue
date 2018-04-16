@@ -45,6 +45,10 @@
             'postreSQL',
             'docker',
             'gulp',
+            'sumologic',
+            'new relic',
+            'circleCI',
+            'rabbitMQ'
           ],
         },
         {
