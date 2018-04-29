@@ -48,7 +48,7 @@
             'sumologic',
             'new relic',
             'circleCI',
-            'rabbitMQ'
+            'rabbitMQ',
           ],
         },
         {
