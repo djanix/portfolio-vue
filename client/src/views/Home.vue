@@ -120,11 +120,10 @@
   .wrapper {
     overflow: hidden;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 
   .print {
     opacity: 0.85;
-    z-index: 10;
   }
 </style>

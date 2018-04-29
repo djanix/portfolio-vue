@@ -24,7 +24,7 @@
     align-items: center;
     height: 100vh;
     position: relative;
-    z-index: 5;
+    z-index: 1;
 
     background: fixed url('../assets/moher_cliffs.jpg') top center / cover no-repeat;
     color: #effcd9;
@@ -36,7 +36,7 @@
 
   .overlay {
     position: absolute;
-    z-index: 5;
+    z-index: 2;
     top: 0;
     right: 0;
     bottom: 0;
@@ -48,7 +48,7 @@
 
   .text {
     position: relative;
-    z-index: 10;
+    z-index: 3;
   }
 
   h1 {

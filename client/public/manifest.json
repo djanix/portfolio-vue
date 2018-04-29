@@ -1,6 +1,11 @@
 {
- "name": "portfolio-vue",
- "short_name": "portfolio-vue",
+ "name": "Janic Beauchemin",
+ "short_name": "JanicB",
+ "lang": "en-US",
+ "display": "standalone",
+ "background_color": "#1B5E20",
+ "theme_color": "#1B5E20",
+ "description": "Janic Beauchemin Portfolio",
  "icons": [
   {
    "src": "/img/icons/android-icon-36x36.png",

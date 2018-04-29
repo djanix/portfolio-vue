@@ -3,7 +3,7 @@
     <h2>About Me</h2>
 
     <div class="picture">
-      <img src="../assets/me-400x400.jpg" alt="">
+      <img src="../assets/me-400x400.jpg" alt="" height="400" width="400">
     </div>
 
     <h3 class="mb-4 px-3">Welcome to my Portfolio!</h3>
