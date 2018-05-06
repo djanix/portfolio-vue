@@ -11,6 +11,18 @@
     <meta name="msapplication-TileImage" content="<%= webpackConfig.output.publicPath %>ms-icon-144x144.png">
     <meta name="theme-color" content="#1B5E20">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60313492-1"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-60313492-1');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
     <link rel="shortcut icon" href="<%= webpackConfig.output.publicPath %>favicon.ico">
 
     <link rel="apple-touch-icon" sizes="57x57" href="<%= webpackConfig.output.publicPath %>icons/apple-icon-57x57.png">
