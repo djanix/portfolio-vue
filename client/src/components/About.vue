@@ -28,6 +28,8 @@
 </script>
 
 <style scoped lang="scss">
+  $border-size: 0px;
+
   h2:after {
     display: none;
   }
@@ -45,12 +47,13 @@
   }
 
   .picture {
-    width: 260px;
-    height: 260px;
+    width: 250px + $border-size;
+    height: 250px + $border-size;
     border-radius: 50%;
-    border: 5px solid $primary-color;
+    border: $border-size solid $primary-color;
     margin: 30px auto;
     overflow: hidden;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
   }
 
   img {

@@ -70,7 +70,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid $primary-color;
+    border: 2px solid $primary-color;
   }
 
   .experience-item {

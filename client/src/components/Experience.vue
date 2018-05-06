@@ -137,7 +137,7 @@
     .experience-list:before {
       display: block;
       content: "";
-      width: 3px;
+      width: 2px;
       background: $primary-color linear-gradient(to bottom, transparent 90%, #BFE1CB) top repeat;
       position: absolute;
       top: 80px;
