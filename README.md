@@ -1,5 +1,7 @@
 # portfolio-vue
 
+[![Deployment status from DeployBot](https://djanix.deploybot.com/badge/88313865856450/131709.svg)](http://deploybot.com)
+
 ## Setup Dev ( without node backend )
 
 ```
