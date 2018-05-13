@@ -4,7 +4,7 @@
   "description": "",
   "main": "app/index.js",
   "scripts": {
-    "start": "tsc && nodemon app/index.js",
+    "start": "tsc && pm2 start app/index.js --name portfolio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Janic Beauchemin",
@@ -14,7 +14,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^4.0.2",
     "node": "^8.10.0",
-    "nodemon": "^1.17.2",
+    "pm2": "^2.10.3",
     "tslint": "^5.9.1",
     "typescript": "^2.8.1"
   },

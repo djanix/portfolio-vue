@@ -16,3 +16,11 @@ app
   .use(router.allowedMethods());
 
 app.listen(3000);
+
+const stopApp = () => {
+  process.exit(1);
+};
+
+process.on('SIGINT', stopApp);
+process.on('SIGTERM', stopApp);
+process.on('uncaughtException', stopApp);
