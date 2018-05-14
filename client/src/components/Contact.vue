@@ -1,6 +1,6 @@
 <template>
   <section class="contact">
-    <h2 class="mb-4">Contact</h2>
+    <h2 class="mb-4">{{ $t("contact.name") }}</h2>
 
     <div id="icon-container" class="text-xs-center mt-4">
       <v-btn

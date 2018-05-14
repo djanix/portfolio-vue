@@ -39,6 +39,8 @@
 <script lang="ts">
   import Vue from 'vue';
   import { format, distanceInWords } from 'date-fns';
+  import en from 'date-fns/locale/en';
+  import fr from 'date-fns/locale/fr';
   import { isEmpty } from 'lodash';
 
   export default Vue.extend({
@@ -49,12 +51,12 @@
     ],
 
     methods: {
-      formatDate(date: string): string {
-        return isEmpty(date) ? 'Present' : format(new Date(date), 'MMM YYYY');
+      formatDate(date: string) {
+        return isEmpty(date) ? this.$t('experience.now') : format(new Date(date), 'MMM YYYY');
       },
 
       calculateDuration(start: string, end: string): string {
-        return distanceInWords(end ? new Date(end) : new Date(), new Date(start));
+        return distanceInWords(end ? new Date(end) : new Date(), new Date(start), { locale: en });
       },
     },
   });

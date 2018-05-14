@@ -4,7 +4,7 @@
 
     <div class="text">
       <h1>Janic Beauchemin</h1>
-      <h2>Web Developer</h2>
+      <h2>{{ $t("jobName") }}</h2>
     </div>
   </div>
 </template>

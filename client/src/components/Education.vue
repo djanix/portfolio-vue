@@ -1,6 +1,6 @@
 <template>
   <section class="education">
-    <h2 class="mb-4">Education</h2>
+    <h2 class="mb-4">{{ $t("education.name") }}</h2>
 
     <v-card class="ma-3 text-xs-left" v-for="item in education" :key="item.name">
       <v-card-title primary-title>
@@ -30,25 +30,26 @@
   export default Vue.extend({
     name: 'Education',
 
-    data: () => ({
-      education: [
-        {
-          name: 'Université du Québec en Abitibi-Témiscamingue',
-          program: 'Creation and New Media',
-          startDate: '2007-09-01',
-          endDate: '2010-05-01',
-          description: 'A three years bachelor degree consisting of web / design / programming / video / 3d.',
-        },
-        {
-          name: 'Cégep de l\'Abitibi-Témiscamingue',
-          program: 'Computer science technology',
-          startDate: '2004-09-01',
-          endDate: '2007-05-01',
-          description: 'A three years college degree focusing on computer theory, computing problems and solutions, ' +
-          'and the design of computer systems and user interfaces.',
-        },
-      ],
-    }),
+    data: function() { /* tslint:disable-line:object-literal-shorthand */
+      return {
+        education: [
+          {
+            name: 'Université du Québec en Abitibi-Témiscamingue',
+            program: this.$t('education.newMedia'),
+            startDate: '2007-09-01',
+            endDate: '2010-05-01',
+            description: this.$t('education.newMediaDesc'),
+          },
+          {
+            name: 'Cégep de l\'Abitibi-Témiscamingue',
+            program: this.$t('education.computerScience'),
+            startDate: '2004-09-01',
+            endDate: '2007-05-01',
+            description: this.$t('education.computerScienceDesc'),
+          },
+        ],
+      };
+    },
 
     methods: {
       formatDate(date: string): string {
