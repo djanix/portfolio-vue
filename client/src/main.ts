@@ -26,7 +26,7 @@ Vue.use(Vuetify, {
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: 'en',
+  locale: localStorage.getItem('locale') || 'en',
   fallbackLocale: 'en',
   messages: locales,
 });
