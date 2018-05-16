@@ -1,9 +1,12 @@
 .DS_Store
 node_modules
-/dist
+dist
 
-/tests/e2e/reports/
+tests/e2e/reports/
 selenium-debug.log
+
+**/*.js
+!tests/e2e/**/*.js
 
 # local env files
 .env.local
