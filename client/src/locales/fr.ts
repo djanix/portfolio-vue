@@ -17,9 +17,9 @@ export default {
   experience: {
     name: 'Expérience',
     now: 'Présent',
-    fullStackWeb: 'Développeur web full stack',
-    frontEndWeb: 'Développeur web frontend',
-    fullStackSoft: 'Développeur de logiciel full stack',
+    fullStackWeb: 'Développeur Web Fullstack',
+    frontEndWeb: 'Développeur Web Frontend',
+    fullStackSoft: 'Développeur de Logiciel Fullstack',
     status: {
       junior: 'junior',
       intermediate: 'intermédiaire',

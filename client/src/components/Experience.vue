@@ -14,8 +14,6 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import { format } from 'date-fns';
-  import { isEmpty } from 'lodash';
 
   import ExperienceItem from '@/components/Experience-item.vue';
 
@@ -26,7 +24,7 @@
       ExperienceItem,
     },
 
-    data: function() { /* tslint:disable-line:object-literal-shorthand */
+    data() {
       return {
         experience: [
           {
@@ -34,8 +32,8 @@
             image: 'logo_sweetiq.jpg',
             startDate: '2015-08-01',
             endDate: null,
-            position: this.$t('experience.fullStackSoft'),
-            status: this.$t('experience.status.lead'),
+            position: 'experience.fullStackSoft',
+            status: 'experience.status.lead',
             skills: [
               'nodeJs',
               'express',
@@ -57,8 +55,8 @@
             image: 'logo_u92.jpg',
             startDate: '2015-02-01',
             endDate: '2015-08-01',
-            position: this.$t('experience.frontEndWeb'),
-            status: this.$t('experience.status.senior'),
+            position: 'experience.frontEndWeb',
+            status: 'experience.status.senior',
             skills: [
               'react',
               'flux',
@@ -71,8 +69,8 @@
             image: 'logo_sidlee.jpg',
             startDate: '2011-11-01',
             endDate: '2015-02-01',
-            position: this.$t('experience.frontEndWeb'),
-            status: this.$t('experience.status.senior'),
+            position: 'experience.frontEndWeb',
+            status: 'experience.status.senior',
             skills: [
               'angular',
               'vue',
@@ -91,8 +89,8 @@
             image: 'logo_golemlabs.jpg',
             startDate: '2011-02-01',
             endDate: '2011-11-01',
-            position: this.$t('experience.fullStackWeb'),
-            status: this.$t('experience.status.intermediate'),
+            position: 'experience.fullStackWeb',
+            status: 'experience.status.intermediate',
             skills: [
               'javascript',
               'jQuery',
@@ -107,8 +105,8 @@
             image: 'logo_radium.jpg',
             startDate: '2009-01-01',
             endDate: '2011-02-01',
-            position: this.$t('experience.fullStackWeb'),
-            status: this.$t('experience.status.junior'),
+            position: 'experience.fullStackWeb',
+            status: 'experience.status.junior',
             skills: [
               'javascript',
               'jQuery',
@@ -120,12 +118,6 @@
           },
         ],
       };
-    },
-
-    methods: {
-      formatDate(date: string): string {
-        return isEmpty(date) ? 'Present' : format(new Date(date), 'MMM YYYY');
-      },
     },
   });
 </script>

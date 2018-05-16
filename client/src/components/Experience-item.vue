@@ -15,7 +15,7 @@
           <v-card-title primary-title>
             <div>
               <h3 class="headline mb-0">{{ item.name }}</h3>
-              <h4 class="title primary--text mb-4">{{ item.position }}</h4>
+              <h4 class="title primary--text mb-4" v-t="item.position"></h4>
 
               <div>
                 <v-chip
@@ -46,17 +46,19 @@
   export default Vue.extend({
     name: 'ExperienceItem',
 
-    props: [
-      'item',
-    ],
+    props: {
+      item: Object,
+    },
 
     methods: {
       formatDate(date: string) {
-        return isEmpty(date) ? this.$t('experience.now') : format(new Date(date), 'MMM YYYY');
+        const locale = this.$i18n.locale === 'en' ? en : fr;
+        return isEmpty(date) ? this.$t('experience.now') : format(new Date(date), 'MMM YYYY', { locale });
       },
 
       calculateDuration(start: string, end: string): string {
-        return distanceInWords(end ? new Date(end) : new Date(), new Date(start), { locale: en });
+        const locale = this.$i18n.locale === 'en' ? en : fr;
+        return distanceInWords(end ? new Date(end) : new Date(), new Date(start), { locale });
       },
     },
   });
