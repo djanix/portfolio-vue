@@ -1,21 +1,15 @@
 <template>
   <section class="about">
-    <h2>About Me</h2>
+    <h2>{{ $t("about.name") }}</h2>
 
     <div class="picture">
       <img src="../assets/me-400x400.jpg" alt="" height="400" width="400">
     </div>
 
-    <h3 class="mb-4 px-3">Welcome to my Portfolio!</h3>
+    <h3 class="mb-4 px-3">{{ $t("about.title") }}</h3>
 
-    <p class="px-3">I'm Janic Beauchemin, a fullstack software developer based in Montreal, Canada.</p>
-
-    <p class="px-3">
-      I am a big fan of everything web related, from functional programming to web design to performance optimization.
-      What I love about web development is that everything is in constant evolution. There's always something new to
-      try and different ways to become a better developer. I'm currently working as a team lead at SweetIQ and I use
-      creativity blended with technology to deliver cutting edge work.
-    </p>
+    <p class="px-3">{{ $t("about.description1") }}</p>
+    <p class="px-3">{{ $t("about.description2") }}</p>
   </section>
 </template>
 

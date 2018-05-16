@@ -4,7 +4,7 @@
 
     <v-btn
       fab
-      color="white"
+      light
       class="print hidden-md-and-down mt-2 mr-2"
       fixed
       top

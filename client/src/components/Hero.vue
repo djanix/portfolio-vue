@@ -4,8 +4,22 @@
 
     <div class="text">
       <h1>Janic Beauchemin</h1>
-      <h2>Web Developer</h2>
+      <h2>{{ $t("jobName") }}</h2>
     </div>
+
+    <v-btn
+      fab
+      flat
+      dark
+      small
+      absolute
+      top
+      left
+      class="cta-locale"
+      v-on:click.native="_updateLanguage($i18n.locale)">
+      <div v-if="$i18n.locale === 'fr'">en</div>
+      <div v-else>fr</div>
+    </v-btn>
   </div>
 </template>
 
@@ -14,6 +28,13 @@
 
   export default Vue.extend({
     name: 'Hero',
+
+    methods: {
+      _updateLanguage(currentLocale: string): void {
+        this.$i18n.locale = currentLocale === 'fr' ? 'en' : 'fr';
+        localStorage.setItem('locale', this.$i18n.locale);
+      },
+    },
   });
 </script>
 
@@ -49,6 +70,10 @@
   .text {
     position: relative;
     z-index: 3;
+  }
+
+  .cta-locale {
+    margin-top: 30px;
   }
 
   h1 {
