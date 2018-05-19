@@ -1,5 +1,5 @@
 <template>
-  <div class="hero" :style="{ maxHeight: maxHeight + 'px' }">
+  <div class="hero" :style="{ height: height + 'px' }">
     <div class="overlay"></div>
 
     <div class="text">
@@ -31,19 +31,19 @@
 
     data() {
       return {
-        maxHeight: window.innerHeight,
+        height: window.innerHeight,
       };
     },
 
     mounted() {
       window.addEventListener('resize', () => {
-        this.maxHeight = window.innerHeight;
+        this.height = window.innerHeight;
       });
     },
 
     destroyed() {
       window.removeEventListener('resize', () => {
-        this.maxHeight = window.innerHeight;
+        this.height = window.innerHeight;
       });
     },
 
@@ -61,7 +61,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     position: relative;
     z-index: 1;
 
