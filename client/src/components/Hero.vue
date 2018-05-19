@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" :style="{ maxHeight: maxHeight + 'px' }">
     <div class="overlay"></div>
 
     <div class="text">
@@ -28,6 +28,24 @@
 
   export default Vue.extend({
     name: 'Hero',
+
+    data() {
+      return {
+        maxHeight: window.innerHeight,
+      };
+    },
+
+    mounted() {
+      window.addEventListener('resize', () => {
+        this.maxHeight = window.innerHeight;
+      });
+    },
+
+    destroyed() {
+      window.removeEventListener('resize', () => {
+        this.maxHeight = window.innerHeight;
+      });
+    },
 
     methods: {
       _updateLanguage(currentLocale: string): void {
