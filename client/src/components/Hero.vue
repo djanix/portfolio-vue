@@ -1,5 +1,5 @@
 <template>
-  <div class="hero" :style="{ height: height + 'px' }">
+  <div class="hero">
     <div class="overlay"></div>
 
     <div class="text">
@@ -29,24 +29,6 @@
   export default Vue.extend({
     name: 'Hero',
 
-    data() {
-      return {
-        height: window.innerHeight,
-      };
-    },
-
-    mounted() {
-      window.addEventListener('resize', () => {
-        this.height = window.innerHeight;
-      });
-    },
-
-    destroyed() {
-      window.removeEventListener('resize', () => {
-        this.height = window.innerHeight;
-      });
-    },
-
     methods: {
       _updateLanguage(currentLocale: string): void {
         this.$i18n.locale = currentLocale === 'fr' ? 'en' : 'fr';
@@ -61,11 +43,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     position: relative;
     z-index: 1;
 
-    background: fixed url('../assets/moher_cliffs.jpg') top center / cover no-repeat;
+    background: url('../assets/moher_cliffs.jpg') top center / cover no-repeat;
     color: #effcd9;
+
+    @media screen and (min-device-width: 1025px) {
+      background-attachment: fixed;
+    }
 
     @media screen and (orientation:portrait) {
       background-image: url('../assets/moher_cliffs_mobile.jpg');
