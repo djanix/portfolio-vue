@@ -6,6 +6,7 @@ tests/e2e/reports/
 selenium-debug.log
 
 **/*.js
+**/*.js.map
 !tests/e2e/**/*.js
 
 # local env files

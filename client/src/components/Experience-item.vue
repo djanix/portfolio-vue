@@ -2,8 +2,8 @@
   <v-container fluid grid-list-lg class="experience-item">
     <v-layout row wrap align-top>
       <v-flex xs8 md3 order-xs2 order-md1 class="text-xs-left text-md-right mt-4">
-        {{ formatDate(item.startDate) }} - {{ formatDate(item.endDate) }}
-         <div class="subheading grey--text">{{ calculateDuration(item.startDate, item.endDate) }}</div>
+        {{ formatDate(item.startDate) }} - {{ formatDate(item.endDate, $i18n.locale) }}
+         <div class="subheading grey--text">{{ calculateDuration(item.startDate, item.endDate, $i18n.locale) }}</div>
       </v-flex>
 
       <v-flex order-xs1 order-md2 class="mt-4 logo">
@@ -51,14 +51,19 @@
     },
 
     methods: {
-      formatDate(date: string) {
-        const locale = this.$i18n.locale === 'en' ? en : fr;
-        return isEmpty(date) ? this.$t('experience.now') : format(new Date(date), 'MMM YYYY', { locale });
+      formatDate(date: string, locale: 'en' | 'fr') {
+        if (isEmpty(date)) {
+          return this.$t('experience.now');
+        }
+
+        const dateLocale = locale === 'fr' ? fr : en;
+        return format(new Date(date), 'MMM YYYY', { locale: dateLocale });
       },
 
-      calculateDuration(start: string, end: string): string {
-        const locale = this.$i18n.locale === 'en' ? en : fr;
-        return distanceInWords(end ? new Date(end) : new Date(), new Date(start), { locale });
+      calculateDuration(start: string, end: string, locale: 'en' | 'fr'): string {
+        const dateEnd = end ? new Date(end) : new Date();
+        const dateLocale = locale === 'fr' ? fr : en;
+        return distanceInWords(dateEnd, new Date(start), { locale: dateLocale });
       },
     },
   });
