@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" ref="hero">
     <div class="overlay"></div>
 
     <div class="text">
@@ -25,14 +25,34 @@
 
 <script lang="ts">
   import Vue from 'vue';
+  import desktopImagePath from '../assets/moher_cliffs.jpg';
+  import mobileImagePath from '../assets/moher_cliffs_mobile.jpg';
 
   export default Vue.extend({
     name: 'Hero',
+
+    mounted() {
+      window.addEventListener('load', () => this.loadImage());
+      window.addEventListener('orientationchange', () => this.loadImage());
+    },
 
     methods: {
       _updateLanguage(currentLocale: string): void {
         this.$i18n.locale = currentLocale === 'fr' ? 'en' : 'fr';
         localStorage.setItem('locale', this.$i18n.locale);
+      },
+
+      loadImage(): void {
+        const heroObject = this.$refs.hero;
+        const img = new Image();
+
+        // setTimeout is needed here to give time to matchMedia to execute while changing the device orientation
+        // makes it easier to test in chrome device simulation mode
+        setTimeout(() => {
+          const imageUrl = (window.matchMedia('(orientation: portrait)').matches) ? mobileImagePath : desktopImagePath;
+          img.src = imageUrl;
+          img.onload = () => heroObject.style.backgroundImage = `url(${imageUrl})`;
+        });
       },
     },
   });
@@ -47,7 +67,7 @@
     position: relative;
     z-index: 1;
 
-    background: url('../assets/moher_cliffs.jpg') top center / cover no-repeat;
+    background: url('../assets/moher_cliffs_blur.jpg') top center / cover no-repeat;
     color: #effcd9;
 
     @media screen and (min-device-width: 1025px) {
@@ -55,7 +75,7 @@
     }
 
     @media screen and (orientation:portrait) {
-      background-image: url('../assets/moher_cliffs_mobile.jpg');
+      background-image: url('../assets/moher_cliffs_mobile_blur.jpg');
     }
   }
 
