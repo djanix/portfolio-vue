@@ -25,7 +25,9 @@
 
 <script lang="ts">
   import Vue from 'vue';
+  // @ts-ignore
   import desktopImagePath from '../assets/moher_cliffs.jpg';
+  // @ts-ignore
   import mobileImagePath from '../assets/moher_cliffs_mobile.jpg';
 
   export default Vue.extend({
@@ -51,6 +53,7 @@
         setTimeout(() => {
           const imageUrl = (window.matchMedia('(orientation: portrait)').matches) ? mobileImagePath : desktopImagePath;
           img.src = imageUrl;
+          // @ts-ignore
           img.onload = () => heroObject.style.backgroundImage = `url(${imageUrl})`;
         });
       },

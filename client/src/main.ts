@@ -13,6 +13,7 @@ import './assets/main.css';
 import './assets/font.css';
 
 import 'vuetify/dist/vuetify.min.css';
+// @ts-ignore
 import colors from 'vuetify/es5/util/colors';
 
 Vue.config.productionTip = false;
