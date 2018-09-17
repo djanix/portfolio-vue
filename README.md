@@ -1,32 +1,23 @@
-# portfolio-vue
+# Janic Beauchemin portfolio
 
-[![Deployment status from DeployBot](https://djanix.deploybot.com/badge/88313865856450/131709.svg)](http://deploybot.com)
+> Portfolio built with VueJS and nuxt: https://janicbeauchemin.com
 
-## Setup Dev ( without node backend )
+## Build Setup
 
-```
-cd ./client
-nvm use
-npm i
-npm start
-```
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-## Setup Prod ( with node backend )
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-### Build client
+# build for production and launch server
+$ npm run build
+$ npm start
 
-```
-cd ./client
-nvm use
-npm i
-npm run build
+# generate static project
+$ npm run generate
 ```
 
-### Start server
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
-```
-cd ./server
-nvm use
-npm i
-npm start
-```
