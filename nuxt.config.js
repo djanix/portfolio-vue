@@ -35,11 +35,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-
-    vendor: [
-      'vuetify',
-    ],
+    }
   },
   css: [
     // Load a Node.js module directly (here it's a Sass file)
