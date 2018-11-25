@@ -10,8 +10,8 @@ export default {
       Je suis un grand fan de tout ce qui est relié à le programmation, à partir de la programmation fonctionnelle au
       design web, en passant par l'optimisation de performance. Ce que j'aime à propos du développement web est que tout
       est en évolution constante. Il y a toujours quelque chose de nouveau à essayer et différentes manières de devenir
-      un meilleur développeur. Je travail présentement comme chef d'équipe chez SweetIQ et j'utilise un mélange de
-      créativité mélangé avec la technologie pour livrer un produit de première qualité.
+      un meilleur développeur. Je travail présentement comme développeur logiciel sénior chez BreatheLife et j'utilise 
+      un mélange de créativité mélangé avec la technologie pour livrer un produit de première qualité.
     `,
   },
   experience: {

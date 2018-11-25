@@ -7,8 +7,8 @@ export default {
     description2: `
       I am a big fan of everything programming related, from functional programming to web design and performance
       optimization. What I love about web development is that everything is in constant evolution. There's always
-      something new to try and different ways to become a better developer. I'm currently working as a team lead at
-      SweetIQ and I use creativity blended with technology to deliver cutting edge work.
+      something new to try and different ways to become a better developer. I'm currently working as a senior software 
+      developer at BreatheLife and I use creativity blended with technology to deliver cutting edge work.
     `,
   },
   experience: {
