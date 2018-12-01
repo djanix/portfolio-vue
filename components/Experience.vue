@@ -26,10 +26,29 @@
       return {
         experience: [
           {
+            name: 'BreatheLife',
+            image: 'logo_breathelife.jpg',
+            startDate: '2018-11-19',
+            endDate: null,
+            position: 'experience.fullStackSoft',
+            status: 'experience.status.senior',
+            skills: [
+              'nodeJs',
+              'express',
+              'feathersJs',
+              'typescript',
+              'react',
+              'redux',
+              'postreSQL',
+              'docker',
+              'golang'
+            ],
+          },
+          {
             name: 'SweetIQ',
             image: 'logo_sweetiq.jpg',
             startDate: '2015-08-01',
-            endDate: null,
+            endDate: '2018-11-16',
             position: 'experience.fullStackSoft',
             status: 'experience.status.lead',
             skills: [
