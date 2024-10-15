@@ -3,8 +3,8 @@
   "about": {
     "name": "About Me",
     "title": "Welcome to my Portfolio!",
-    "description1": "I'm Janic Beauchemin, a full stack software developer based in Montreal, Canada.",
-    "description2": "I am a big fan of everything programming related, from functional programming to web design and performance optimization. What I love about web development is that everything is in constant evolution. There's always something new to try and different ways to become a better developer. I'm currently working as a senior software developer at BreatheLife and I use creativity blended with technology to deliver cutting edge work."
+    "description1": "I'm Janic Beauchemin, a software developer and team leader based in Montreal, Canada.",
+    "description2": "I have over 15 years of professional experience and I’m focused on delivering business value by aligning engineering direction and product vision. Through the years, I acquired experience driving the architecture direction while allowing the team and product to scale from a startup mindset into a well-established company."
   },
   "experience": {
     "name": "Experience",
@@ -12,6 +12,9 @@
     "fullStackWeb": "Full stack Web Developer",
     "frontEndWeb": "Frontend Web Developer",
     "fullStackSoft": "Full stack Software Developer",
+    "leadDev": "Team Lead / Software Developer",
+    "manager": "Engineering Manager",
+    "directorLeadDev": "Director of Engineering / Team Lead / Software Developer",
     "status": {
       "junior": "junior",
       "intermediate": "intermediate",

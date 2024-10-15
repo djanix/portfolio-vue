@@ -3,15 +3,17 @@
   "about": {
     "name": "À propos de moi",
     "title": "Bienvenue sur mon portfolio!",
-    "description1": "Mon nom est Janic Beauchemin, je suis un développeur logiciel full stack qui habite à Montréal, Canada.",
-    "description2": " Je suis un grand fan de tout ce qui est relié à le programmation, à partir de la programmation fonctionnelle au design web, en passant par l'optimisation de performance. Ce que j'aime à propos du développement web est que tout est en évolution constante. Il y a toujours quelque chose de nouveau à essayer et différentes manières de devenir un meilleur développeur. Je travail présentement comme développeur logiciel sénior chez BreatheLife et j'utilise un mélange de créativité mélangé avec la technologie pour livrer un produit de première qualité."
+    "description1": "Mon nom est Janic Beauchemin, je suis un développeur logiciel et un chef d'équipe qui habite à Montréal au Canada.",
+    "description2": "Avec plus de 15 années d'expérience professionelle, je me concentre sur la création de valeur commerciale en alignant la direction technique avec la vision produit. Au fil des années, j'ai acquis de l'expérience dirigeant la direction de l'architecture technique tout en permettant à l'équipe et au produit de passer d'un mode de start-up à une entreprise bien établie."
   },
   "experience": {
     "name": "Expérience",
     "now": "Présent",
     "fullStackWeb": "Développeur Web Fullstack",
     "frontEndWeb": "Développeur Web Frontend",
-    "fullStackSoft": "Développeur de Logiciel Fullstack",
+    "leadDev": "Chef d'équipe / Développeur Web",
+    "manager": "Manager Technique",
+    "directorLeadDev": "Directeur Technique / Chef d'équipe / Développeur Web",
     "status": {
       "junior": "junior",
       "intermediate": "intermédiaire",

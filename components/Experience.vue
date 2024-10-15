@@ -26,12 +26,30 @@
       return {
         experience: [
           {
+            name: 'Zinnia (formerly Breathe Life)',
+            image: 'logo_zinnia.jpg',
+            startDate: '2022-09-01',
+            endDate: null,
+            position: 'experience.manager',
+            status: 'experience.status.senior',
+            skills: [
+              '.net',
+              'angular',
+              'kafka',
+              'opsGenie',
+              'aws',
+              'mssql',
+              'mongo',
+              'tfs'
+            ],
+          },
+          {
             name: 'BreatheLife',
             image: 'logo_breathelife.jpg',
             startDate: '2018-11-19',
-            endDate: null,
-            position: 'experience.fullStackSoft',
-            status: 'experience.status.senior',
+            endDate: '2022-09-01',
+            position: 'experience.directorLeadDev',
+            status: 'experience.status.lead',
             skills: [
               'nodeJs',
               'express',
@@ -41,7 +59,9 @@
               'redux',
               'postreSQL',
               'docker',
-              'golang'
+              'golang',
+              'terraform',
+              'git'
             ],
           },
           {
@@ -49,7 +69,7 @@
             image: 'logo_sweetiq.jpg',
             startDate: '2015-08-01',
             endDate: '2018-11-16',
-            position: 'experience.fullStackSoft',
+            position: 'experience.leadDev',
             status: 'experience.status.lead',
             skills: [
               'nodeJs',

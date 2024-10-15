@@ -66,6 +66,21 @@
           icon: 'devicon-postgresql-plain',
           category: 'language',
         },
+        // {
+        //   name: 'kafka',
+        //   icon: 'devicon-apachekafka-original',
+        //   category: 'tool',
+        // },
+        // {
+        //   name: 'GCP',
+        //   icon: 'devicon-googlecloud-plain',
+        //   category: 'tool',
+        // },
+        // {
+        //   name: 'AWS',
+        //   icon: 'devicon-amazonwebservices-plain-wordmark',
+        //   category: 'tool',
+        // },
         {
           name: 'webpack',
           icon: 'devicon-webpack-plain',
